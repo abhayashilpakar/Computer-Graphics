@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//aalu 
 void draw_line(int x0, int y0, int x1, int y1) {
     int dx = abs(x1 - x0);
     int dy = abs(y1 - y0);
