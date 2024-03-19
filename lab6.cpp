@@ -64,7 +64,7 @@ void Scaling(int vertices[]){
     outtextxy(200,40,"After Scaling");
 }
 int main(){
-    int vertices[]={110,110,130,110,130,140,10,110},n;
+    int vertices[]={110,110,130,110,130,140,110,110},n;
     printf("1.Translation\n2.Rotation\n3.Scaling\n4.Exit\n");
     scanf("%d",&n);
     switch(n){
