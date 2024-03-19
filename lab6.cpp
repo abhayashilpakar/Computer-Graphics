@@ -34,7 +34,7 @@ void Rotation(int vertices[]){
     initgraph(&gd,&gm," ");
     drawpoly(4,vertices);
     outtextxy(30,60,"Before Rotation");
-    fo(int i=0;i<8;i++){
+    for(int i=0;i<8;i++){
         if(i%2==0){
             vertices[i]=vertices[i]*cos(angle)-vertices[i]*sin(angle);
             printf("%d\t",vertices[i]);
@@ -48,7 +48,7 @@ void Rotation(int vertices[]){
 }
 void Scaling(int vertices[]){
     int gd=DETECT,gm,Sx,Sy,i;
-    prinf("Enter Scaling Factor");
+    printf("Enter Scaling Factor");
     scanf("%d%d",&Sx,&Sy);
     initgraph(&gd,&gm," ");
     drawpoly(4,vertices);
@@ -73,7 +73,7 @@ int main(){
         break;
         case 2:
         Rotation(vertices);
-        break:
+        break;
         case 3:
         Scaling(vertices);
         break;
